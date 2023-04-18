@@ -1,0 +1,148 @@
+.page {
+    margin: 0;
+}
+
+.header {
+    background-color: bisque;
+    border-bottom: solid 3px black;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__text {
+    row-gap: 3.5vh;
+    text-align: center;
+    margin: auto;
+}
+
+.header__greeting {
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+.header__name {
+    font-size: 4vh;
+    margin: 0;
+}
+
+.header__main-info {
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+.header__image {
+    margin: 5vh auto;
+    width: 15%;
+    height: 15%;
+}
+
+.main__image {
+    margin: 5vh auto;
+    width: 25%;
+    height: 25%;
+}
+
+.main {
+    margin: 0;
+    background-color: burlywood;
+}
+
+.indent{
+    padding-bottom: 1vh;
+}
+
+.work-and-studying, .work-and-studying__skills, .interests {
+    margin: auto;
+}
+
+.work-and-studying__education-places, .work-and-studying__skills-list {
+    font-size: 2.5vh;
+    list-style-type: "\27A4";
+}
+
+.work-and-studying__dates, .interests__list-programming {
+    list-style: none;
+}
+
+.interests__subtitle {
+    font-size: 3vh;
+    margin-top: 0;
+}
+
+.interests__list {
+    font-size: 3vh;
+    margin: 0;
+}
+
+.map {
+    background-color: lightgoldenrodyellow;
+    justify-content: space-between;
+    height: 50vh;
+    border: solid 3px black;
+}
+
+.map__text {
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.map__interactive {
+    border-right: solid 3px black;
+}
+
+.map__text, .telephone-link, .mail-link {
+    font-size: 2.5vh;
+}
+
+.telephone-link, .mail-link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    margin: 0;
+    background-color: peru;
+}
+
+.flex-start {
+    display: flex;
+    padding-left: 6%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.final__text {
+    font-size: 2.5vh;
+    font-weight: normal;
+}
+
+.links {
+    display: flex;
+}
+
+.links__design {
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 2vh;
+}
+
+.links__tg {
+    background-image: url("../images/tg.png");
+}
+
+.links__vk {
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-image: url("../images/vk.png");
+}
