@@ -142,11 +142,11 @@
 }
 
 .links__tg {
-    background-image: url("../images/tg.png");
+    background-image: url("../images/tg.webp");
 }
 
 .links__vk {
     background-size: 82%;
     background-repeat: no-repeat;
-    background-image: url("../images/vk.png");
+    background-image: url("../images/vk.webp");
 }
