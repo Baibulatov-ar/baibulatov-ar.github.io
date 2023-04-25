@@ -53,6 +53,7 @@
 .main {
     margin: 0;
     background-color: burlywood;
+    flex-wrap: wrap;
 }
 
 .indent{
@@ -90,9 +91,12 @@
 }
 
 .map__text {
+    padding-left: 0;
     margin: auto;
     list-style: none;
     text-align: center;
+    min-height: 100px;
+    min-width: min-content;
 }
 
 .map__interactive {
