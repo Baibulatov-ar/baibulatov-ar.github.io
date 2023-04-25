@@ -94,7 +94,7 @@
     list-style: none;
     text-align: center;
     min-height: 100px;
-    min-width: min-content;
+    min-width: max-content;
 }
 
 .map__interactive {
