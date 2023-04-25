@@ -86,7 +86,6 @@ body {
     background-color: lightgoldenrodyellow;
     justify-content: space-between;
     height: 50vh;
-    border: 3px solid black;
 }
 
 .map__interactive {
@@ -156,8 +155,7 @@ body {
     }
     .map__interactive {
         height: 50vh;
-        width: 99vw;
-        border-bottom: 3px solid black;
+        width: 100vw;
     }
     .header__image {
         width: 30%;
