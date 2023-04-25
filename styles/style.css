@@ -85,7 +85,7 @@
     background-color: lightgoldenrodyellow;
     justify-content: space-between;
     height: 50vh;
-    border: solid 3px black;
+    border: 3px solid black;
 }
 
 .map__text {
@@ -93,12 +93,6 @@
     margin: auto;
     list-style: none;
     text-align: center;
-    min-height: 100px;
-    min-width: min-content;
-}
-
-.map__interactive {
-    border-right: solid 3px black;
 }
 
 .map__text, .telephone-link, .mail-link {
@@ -147,4 +141,32 @@
     background-size: 82%;
     background-repeat: no-repeat;
     background-image: url("../images/vk.webp");
+}
+
+@media screen and (max-width: 600px) {
+    .map {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+    }
+    .map__interactive {
+        height: 50vh;
+        width: 100vw;
+        border-bottom: 3px solid black;
+    }
+    .header__image {
+        width: 30%;
+    }
+    .main__image {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .map {
+        display: flex;
+    }
+    .map__interactive {
+        border-right: 3px solid black;
+    }
 }
