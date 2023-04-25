@@ -89,6 +89,10 @@ body {
     border: 3px solid black;
 }
 
+.map__interactive {
+    border-style: none;
+}
+
 .map__text {
     padding-left: 0;
     margin: auto;
