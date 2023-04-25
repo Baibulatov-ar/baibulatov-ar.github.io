@@ -1,4 +1,4 @@
-.page {
+body {
     margin: 0;
 }
 
@@ -152,7 +152,7 @@
     }
     .map__interactive {
         height: 50vh;
-        width: 100vw;
+        width: 99vw;
         border-bottom: 3px solid black;
     }
     .header__image {
@@ -160,6 +160,9 @@
     }
     .main__image {
         width: 50%;
+    }
+    .map__text {
+        margin: 3vh;
     }
 }
 
