@@ -16,8 +16,8 @@
 </head>
 <body class="page">
   <!--введение-->
-  <header class="header flex-row">
-    <section class="header__text flex-column">
+  <header class="header header_theme_black flex-row">
+    <section class="header__text flex-column text_theme_black">
       <p class="header__greeting">Привет, меня зовут</p>
       <h1 class="header__name">Байбулатов Амир</h1>
       <p class="header__main-info">и это моё портфолио</p>
@@ -25,24 +25,24 @@
     <img class="header__image" src="images/img1.webp" alt="титульная фотография">
   </header>
   <!--образование, навыки, интересы, опыт работы-->
-  <main class="main flex-row">
+  <main class="main flex-row main_theme_black">
     <!--фото-->
     <img class="main__image" src="images/img2.webp" alt="фото в МФТИ">
     <!--образование, навыки, опыт работы-->
     <section class="flex-column">
       <section class="work-and-studying">
-        <div class="work-and-studying__education">
+        <div class="work-and-studying__education text_theme_black">
           <h2 class="work-and-studying__education-subtitle">Образование:</h2>
-          <ul class="work-and-studying__education-places">
+          <ul class="work-and-studying__education-places text_theme_black">
             <li class="work-and-studying__school">ГБОУ СО "Гимназия №1 (Базовая школа РАН)"</li>
             <li class="work-and-studying__dates indent">г. Самара, 2011-2022</li>
             <li class="work-and-studying__university">Высшая школа программной инженерии, МФТИ</li>
             <li class="work-and-studying__dates indent">г. Долгопрудный, 2022-2026</li>
           </ul>
         </div>
-        <div class="work-and-studying__skills">
+        <div class="work-and-studying__skills text_theme_black">
           <h2 class="work-and-studying__skills-subtitle">Мои навыки:</h2>
-          <ul class="work-and-studying__skills-list">
+          <ul class="work-and-studying__skills-list text_theme_black">
             <li class="indent">Создание проектов на языке Java</li>
             <li class="indent">Способность быстро изучать материал</li>
             <li class="indent">Работа с GIT</li>
@@ -52,9 +52,9 @@
       </section>
     </section>
       <!--интересы-->
-      <section class="interests flex-column">
+      <section class="interests flex-column text_theme_black">
         <h2 class="interests__subtitle">Мои интересы:</h2>
-        <ul class="interests__list">
+        <ul class="interests__list text_theme_black">
           <li class="indent">Футбол</li>
           <li class="indent">Баскетбол</li>
           <li class="indent">Волейбол</li>
@@ -66,25 +66,68 @@
         </ul>
       </section>
   </main>
-  <section class="map">
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4829fe925a7407df13d2669f0c431681e8d45784e272077cebedfe395c0c4e9&amp;source=constructor" class="map__interactive"></iframe>
-    <ul class="map__text flex-column">
+  <section class="map map_black_theme">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4829fe925a7407df13d2669f0c431681e8d45784e272077cebedfe395c0c4e9&amp;source=constructor" class="map__interactive map__interactive_black_theme"></iframe>
+    <ul class="map__text flex-column text_theme_black">
       <li class="indent">Меня можете найти</li>
       <li class="indent">в общежитии №4 МФТИ</li>
       <li class="indent">комната 204</li>
       <li class="indent">Позвонить по номеру</li>
-      <li class="indent"><a href="tel:+79879848788" class="telephone-link">+79879848788</a></li>
+      <li class="indent"><a href="tel:+79879848788" class="telephone-link telephone-link_black_theme">+79879848788</a></li>
       <li class="indent">Или написать на email</li>
-      <li class="indent"><a href="mailto:baibulatov.ar@phystech.edu" class="mail-link">baibulatov.ar@phystech.edu</a></li>
+      <li class="indent"><a href="mailto:baibulatov.ar@phystech.edu" class="mail-link mail-link_black_theme">baibulatov.ar@phystech.edu</a></li>
     </ul>
   </section>
-  <!--ссылки на соц сети-->
-  <footer class="footer flex-start">
-    <h3 class="final__text">Так же я в соцсетях:</h3>
+  <!--галерея-->
+  <section class="gallery gallery_black_theme">
+    <h2 class="gallery__subtitle text_theme_black">Вот ещё небольшая галерея из моих фоточек :)</h2>
+    <div class="gallery-list">
+      <img src="images/img5.webp" class="gallery__picture" alt="В Турции 2">
+      <img src="images/img3.webp" class="gallery__picture" alt="В Турции">
+      <img src="images/img4.webp" class="gallery__picture" alt="В комп клубе">
+    </div>
+  </section>
+  <!--попапы и формы-->
+  <div class="popup popup-closed gallery__popup">
+    <button class="popup__button popup__left_button without__button">←</button>
+    <img src="images/img3.webp" class="popup-data__image" alt="В музее">
+    <button class="popup__button popup__right_button without__button">→</button>
+    <button class="popup__close_button">×</button>
+  </div>
+  <div class="popup popup-closed form form-popup">
+    <form class="form__input-container">
+      <h2 class="form__heading">Обратная связь</h2>
+      <label for="tel-input" class="form__label">Телефон</label>
+      <input type="tel" class="form__item form__number" id="tel-input" name="number" placeholder="+78005553535" required>
+      <span class="popup__form-error tel-input-error"></span>
+      <label for="email-input" class="form__label">E-mail</label>
+      <input type="email" class="form__item form__email" id="email-input" name="email" placeholder="hello@example.com" required>
+      <span class="popup__form-error email-input-error"></span>
+      <label for="text-input" class="form__label">Текст</label>
+      <textarea type="text" class="form__item form__text" id="text-input" name="text" spellcheck="true"></textarea>
+      <span class="popup__form-error text-input-error"></span>
+      <button class="form__sending form__sending_black_theme">Отправить</button>
+    </form>
+  </div>
+  <div class="popup popup-closed random_popup">
+    <div class="random_popup__message">
+    <h2>30 секунд прошли</h2>
+    </div>
+  </div>
+  <!--ссылки на соц сети и форму + дождь-->
+  <footer class="footer footer_black_theme flex-start">
+    <h3 class="final__text">Также я в соцсетях:</h3>
     <section class="links">
       <a href="https://t.me/a4m1r04" class="links__tg links__design"></a>
       <a href="https://vk.com/a4m1r04" class="links__vk links__design"></a>
     </section>
+    <section class="buttons">
+      <button class="buttons__feedback"><img src="images/feedback_icon.webp" class="buttons__feedback-image" alt="форма обратной связи"></button>
+      <button class="buttons__rain footer__rain-button"><img src="images/rain.webp" class="buttons__rain-image" alt="дождь"></button>
+      <button class="buttons__theme"><img src="images/white-black_theme_icon.webp" class="buttons__theme-image" alt="смена темы"></button>
+    </section>
   </footer>
+  <div class="rain rain_animation"></div>
+  <script src="javascript/script.js"></script>
 </body>
 </html>
