@@ -148,6 +148,9 @@ const parameters = {
 }
 
 function incorrectEmail(inputElement) {
+    if (inputElement.value.indexOf('/') !== - 1) {
+        return true;
+    }
     const inputValue = inputElement.value.split(".");
     if (inputValue.length <= 1) {
         return true;
